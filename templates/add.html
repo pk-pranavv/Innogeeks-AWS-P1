@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            Input Data
+        </title>
+    </head>
+    <body>
+        <h2>Employee Information</h2>
+        {% if var == 'createbucket' %}
+            <form action="/createbucket/success" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            Bucket Name
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Location
+                        </td>
+                        <td>
+                            <input type="text" name="Location">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        {% endif %}
+        {% if var == 'getbucketpolicy' %}
+            <form action="/getbucketpolicy/success" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            Bucket Name
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        {% endif %}
+        {% if var == 'deletebucketpolicy' %}
+            <form action="/deletebucketpolicy/success" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            Bucket Name
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        {% endif %}
+
+    </body>
+</html>

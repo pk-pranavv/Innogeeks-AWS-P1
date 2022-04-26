@@ -5,7 +5,6 @@
         </title>
     </head>
     <body>
-        <h2>Employee Information</h2>
         {% if var == 'createbucket' %}
             <form action="/createbucket/success" method="post">
                 <table>
@@ -71,6 +70,42 @@
                 </table>
             </form>
         {% endif %}
+        {% if var == 'listfiles' %}
+            <form action="/listfiles/success" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            Bucket Name
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        {% endif %}
+        {%if var=='upload'%}
+            <form method="POST" action="/uploadfile/success" enctype=multipart/form-data>
+                <table>
+                    <tr>
+                        <td>
+                            Bucket Name
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+                        </td>
+                    </tr>
+                </table>
+                <input type=file name=file>
+                <input type=submit value=Upload>
+                
+            </form>
+        {%endif%}
 
     </body>
 </html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    min-height: 78vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 35px;
+    flex-direction: row;
+    background-image: url('back.jpg');
+    background-size: cover;
+    box-shadow: 4px 4px 12px 5px rgb(29, 9, 100);
+}
+
+.tag{
+    border-color: chartreuse;
+    display: grid;
+    
+    
+}
+
+.display{
+    max-height: 60vh;
+    margin-top: 100px;
+    margin-left: 500px;
+    padding: 0;
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    border-color: blueviolet;
+}
+
+
+/* .container h2 {
+    padding-left: 400px;
+} */
+/* ul li{
+    margin: 10px;
+    padding: 5px;
+    list-style-type: none;
+}  */

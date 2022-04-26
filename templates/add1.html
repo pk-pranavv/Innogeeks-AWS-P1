@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <br><br>
+        <h2>Input Required Data</h2>
+        {% if var == 'create' %}
+        <form action="/createinstance/success" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Key Pair Name
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {%endif%}
+        {% if var == 'stopinstance' %}
+        <form action="/stopinstance/success" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Instance ID
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {% endif %}
+        {% if var == 'getpublicip' %}
+        <form action="/getpublicip/success" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Instance ID
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {%endif%}
+        {% if var == 'terminate' %}
+        <form action="/terminateinstance/success" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Instance ID
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {%endif%}
+        {% if var == 'reboot' %}
+        <form action="/reboot/success" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Instance ID
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {%endif%}
+        {% if var == 'describe' %}
+        <form action="/describe/success" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Instance ID
+                    </td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        {%endif%}
+    </body>
+</html>
